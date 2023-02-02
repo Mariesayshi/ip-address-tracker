@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="pageContent">
+      <div class="bg"></div>
+      <h3 class="heading">IP Address Tracker</h3>
+      <div class="inputAndBtn">
+        <input class="ipInput" type="text" />
+        <button class="sendBtn">&gt</button>
+      </div>
+      <div class="searchResults">
+        <div class="ip searchResultCont">
+          <div class="ipHeading searchHeading">ip address</div>
+          <div class="ipResult searchResult"></div>
+        </div>
+        <div class="location searchResultCont">
+          <div class="locationHeading searchHeading">Location</div>
+          <div class="locationResult searchResult"></div>
+        </div>
+        <div class="timezone searchResultCont">
+          <div class="timezoneHeading searchHeading">timezone</div>
+          <div class="timezoneResult searchResult"></div>
+        </div>
+        <div class="isp searchResultCont">
+          <div class="ispHeading searchHeading">isp</div>
+          <div class="ispResult searchResult"></div>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
